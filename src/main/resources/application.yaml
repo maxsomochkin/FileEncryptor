@@ -1,0 +1,13 @@
+spring:
+ application:
+  name: file-encryptor
+ jackson:
+  parser:
+   allow-backslash-escaping-any-character: true
+
+encryption:
+  transformation: "AES/CTR/NoPadding"
+  algorithm: "AES"
+  keyLength: 32
+  bufferCapacity: 8192
+
